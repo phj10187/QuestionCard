@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문카드</title>
+    <style>
+        .box {
+            padding : 10px;
+        }
+        h1 {
+            color: darkslategrey;
+        }
+        .card {
+            margin: 20px;
+            height: 200px;
+            width: 150px;
+            color: darkslategray;
+            font-size: 50pt;
+            background-color:pink;
+        }
+
+        .replay {
+            margin: 20px;
+            height: 50%;
+            width: 150px;
+            font-size: 20pt;
+            color: darkslategrey;
+        }
+  
+    </style>
+</head>
+
+<body bgcolor="cornflowerblue">
+    <div>
+        <div class="box">
+            <h1>카드를 선택하세요</h1>
+        </div>
+        <div>
+            <button class="card" id="c1" onclick='change1()'>1</button>
+            <button class="card" id="c2" onclick='change2()'>2</button>
+            <button class="card" id="c3" onclick='change3()'>3</button>
+        </div>
+        <br><br><br>
+        <div>
+            <button class="replay" id="re" onclick='restart()'>처음으로</button>
+        </div>
+    </div>
+
+<script>
+function change1() {
+    const btnElement = document.getElementById('c1')
+    btnElement.innerText = "기억에 남는 장소"
+    btnElement.style.backgroundColor = "palevioletred"
+    btnElement.style.fontSize = "2vh";
+    }
+
+function change2() {
+    const btnElement = document.getElementById('c2')
+    btnElement.innerText = "함께 배워 보고 싶은 것"
+    btnElement.style.backgroundColor = "palevioletred"
+    btnElement.style.fontSize = "2vh";
+    }  
+
+function change3() {
+    const btnElement = document.getElementById('c3')
+    color = 
+    btnElement.innerText = "내가 잘 하지만 하기 싫은 일"
+    btnElement.style.backgroundColor = "palevioletred"
+    btnElement.style.fontSize = "2vh";
+    }  
+function restart() {
+     location.reload(true);
+    } 
+</script>
+</body>
+</html>
